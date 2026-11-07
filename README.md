@@ -28,6 +28,8 @@ bash start.sh stop
 
 Depois, abra uma **sessão nova** do Claude Code para os plugins e a skill carregarem.
 
+**Ligação automática:** o gancho `.claude/hooks/session-start.sh` roda o `start.sh` sempre que uma sessão do Claude Code começa nesta pasta. Se as ferramentas não estiverem instaladas, ele só avisa e não trava a sessão.
+
 ## Próximos passos
 
 - **OmniRoute:** abra http://localhost:20128, conecte um provedor (OpenAI, Anthropic, Gemini…) e crie uma chave em *Endpoints*.
